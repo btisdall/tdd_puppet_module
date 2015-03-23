@@ -1,0 +1,33 @@
+{
+  "name": "bentis-tdd_puppet_module",
+  "version": "0.1.0",
+  "author": "Ben Tisdall (bentis)",
+  "summary": "Forms the basis of a tech talk on Puppet & TDD",
+  "license": "Apache 2.0",
+  "source": "git@github.com:btisdall/tdd_puppet_module.git",
+  "project_page": "git@github.com:btisdall/tdd_puppet_module.git",
+  "issues_url": "git@github.com:btisdall/tdd_puppet_module.git",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    }
+  ]
+}
