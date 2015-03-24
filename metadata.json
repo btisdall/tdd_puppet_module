@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "Ben Tisdall (bentis)",
   "summary": "Forms the basis of a tech talk on Puppet & TDD",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "source": "git@github.com:btisdall/tdd_puppet_module.git",
   "project_page": "git@github.com:btisdall/tdd_puppet_module.git",
   "issues_url": "git@github.com:btisdall/tdd_puppet_module.git",
