@@ -1,3 +1,6 @@
+#tdd_puppet_module
+[![Build Status](https://travis-ci.org/btisdall/tdd_puppet_module.svg)](https://travis-ci.org/btisdall/tdd_puppet_module)
+
 #### Table of Contents
 
 1. [Overview](#overview)
