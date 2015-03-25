@@ -32,8 +32,3 @@ describe 'tdd_puppet_module' do
     end
   end
 end
-
-describe 'tdd_puppet_module' do
-  let(:facts) { {:osfamily => 'Debian'} }
-
-end
