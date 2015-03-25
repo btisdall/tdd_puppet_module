@@ -12,19 +12,19 @@ describe 'tdd_puppet_module' do
         when 'Debian'
           it do
             should contain_file('/etc/tdd_puppet_module.cfg').with(
-              ensure: 'present',
-              owner:  'adm',
-              group:  'root',
-              mode:  '0755',
+              :ensure => 'present',
+              :owner  =>  'adm',
+              :group  =>  'root',
+              :mode   =>  '0755',
             )
           end
         when 'RedHat'
           it do
             should contain_file('/etc/tdd_puppet_module.conf').with(
-              ensure: 'present',
-              owner:  'adm',
-              group:  'root',
-              mode:  '0755',
+              :ensure => 'present',
+              :owner  =>  'adm',
+              :group  =>  'root',
+              :mode   =>  '0755',
             )
           end
         end
