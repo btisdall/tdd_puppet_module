@@ -4,9 +4,9 @@
 #
 class tdd_puppet_module::config {
 
-  file { '/etc/example_config_file.cfg':
+  file { $::tdd_puppet_module::params::config_file_name:
     ensure => present,
-    owner  => 'www-data',
+    owner  => 'adm',
     group  => 'root',
     mode   => '0755',
   }

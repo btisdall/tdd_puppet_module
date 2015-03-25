@@ -8,10 +8,12 @@ class tdd_puppet_module::params {
     'Debian': {
       $package_name = 'fortune'
       $service_name = 'ssh'
+      $config_file_name = '/etc/tdd_puppet_module.cfg'
     }
     'RedHat': {
       $package_name = 'cowsay'
       $service_name = 'sshd'
+      $config_file_name = '/etc/tdd_puppet_module.conf'
     }
     default: {
       fail("${::operatingsystem} not supported")
