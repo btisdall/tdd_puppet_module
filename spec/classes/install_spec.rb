@@ -10,9 +10,9 @@ describe 'tdd_puppet_module' do
 
         case facts[:osfamily]
         when 'Debian'
-            it { is_expected.to contain_package('fortune').with_ensure('present') }
+            it { is_expected.to contain_package('nginx').with_ensure('present') }
         when 'RedHat'
-            it { is_expected.to contain_package('cowsay').with_ensure('present') }
+            it { is_expected.to contain_package('lighttpd').with_ensure('present') }
         end
       end
     end

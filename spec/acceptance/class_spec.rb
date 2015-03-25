@@ -14,13 +14,13 @@ describe 'tdd_puppet_module class' do
       apply_manifest(pp, :catch_changes  => true)
     end
 
-    describe package('openssh-server') do
+    describe package('nginx') do
       it { is_expected.to be_installed }
     end
 
-#    describe service('tdd_puppet_module') do
-#      it { is_expected.to be_enabled }
-#      it { is_expected.to be_running }
-#    end
+    describe service('nginx') do
+      it { is_expected.to be_enabled }
+      it { is_expected.to be_running }
+    end
   end
 end

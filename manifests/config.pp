@@ -6,7 +6,7 @@ class tdd_puppet_module::config {
 
   file { $::tdd_puppet_module::params::config_file_name:
     ensure => present,
-    owner  => 'adm',
+    owner  => 'root',
     group  => 'root',
     mode   => '0755',
   }

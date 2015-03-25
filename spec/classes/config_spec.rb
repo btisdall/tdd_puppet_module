@@ -13,7 +13,7 @@ describe 'tdd_puppet_module' do
           it do
             should contain_file('/etc/tdd_puppet_module.cfg').with(
               :ensure => 'present',
-              :owner  => 'adm',
+              :owner  => 'root',
               :group  => 'root',
               :mode   => '0755',
             )
@@ -22,7 +22,7 @@ describe 'tdd_puppet_module' do
           it do
             should contain_file('/etc/tdd_puppet_module.conf').with({
               :ensure => 'present',
-              :owner  => 'adm',
+              :owner  => 'root',
               :group  => 'root',
               :mode   => '0755',
             })

@@ -6,13 +6,13 @@
 class tdd_puppet_module::params {
   case $::osfamily {
     'Debian': {
-      $package_name = 'fortune'
-      $service_name = 'ssh'
+      $package_name = 'nginx'
+      $service_name = 'nginx'
       $config_file_name = '/etc/tdd_puppet_module.cfg'
     }
     'RedHat': {
-      $package_name = 'cowsay'
-      $service_name = 'sshd'
+      $package_name = 'lighttpd'
+      $service_name = 'lighttpd'
       $config_file_name = '/etc/tdd_puppet_module.conf'
     }
     default: {

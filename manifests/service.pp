@@ -7,8 +7,8 @@ class tdd_puppet_module::service {
 
   service { $::tdd_puppet_module::service_name:
     ensure     => running,
-    enable     => true,
     hasstatus  => true,
     hasrestart => true,
+    provider   => 'upstart',
   }
 }

@@ -25,6 +25,7 @@ RSpec.configure do |c|
     puppet_module_install(:source => proj_root, :module_name => 'tdd_puppet_module')
     hosts.each do |host|
       on host, puppet('module', 'install', 'puppetlabs-stdlib'), { :acceptable_exit_codes => [0,1] }
+      on host, %q{sed -i '/templatedir/d' /etc/puppet/puppet.conf}
     end
   end
 end
