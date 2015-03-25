@@ -6,12 +6,12 @@
 class tdd_puppet_module::params {
   case $::osfamily {
     'Debian': {
-      $package_name = 'tdd_puppet_module'
-      $service_name = 'tdd_puppet_module'
+      $package_name = 'fortune'
+      $service_name = 'ssh'
     }
-    'RedHat', 'Amazon': {
-      $package_name = 'tdd_puppet_module'
-      $service_name = 'tdd_puppet_module'
+    'RedHat': {
+      $package_name = 'cowsay'
+      $service_name = 'sshd'
     }
     default: {
       fail("${::operatingsystem} not supported")

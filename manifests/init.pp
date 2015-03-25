@@ -18,4 +18,5 @@ class tdd_puppet_module (
   class { '::tdd_puppet_module::config': } ~>
   class { '::tdd_puppet_module::service': } ->
   Class['::tdd_puppet_module']
+
 }

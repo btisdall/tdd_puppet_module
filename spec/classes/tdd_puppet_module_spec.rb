@@ -17,9 +17,6 @@ describe 'tdd_puppet_module' do
           it { is_expected.to contain_class('tdd_puppet_module::install').that_comes_before('tdd_puppet_module::config') }
           it { is_expected.to contain_class('tdd_puppet_module::config') }
           it { is_expected.to contain_class('tdd_puppet_module::service').that_subscribes_to('tdd_puppet_module::config') }
-
-          it { is_expected.to contain_service('tdd_puppet_module') }
-          it { is_expected.to contain_package('tdd_puppet_module').with_ensure('present') }
         end
       end
     end
