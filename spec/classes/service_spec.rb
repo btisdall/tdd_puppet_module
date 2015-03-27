@@ -12,7 +12,7 @@ describe 'tdd_puppet_module' do
         when 'Debian'
             it { is_expected.to contain_service('nginx').with_ensure('running') }
         when 'RedHat'
-            it { is_expected.to contain_service('lighttpd').with_ensure('running') }
+            it { is_expected.to contain_service('nginx').with_ensure('running') }
         end
       end
     end

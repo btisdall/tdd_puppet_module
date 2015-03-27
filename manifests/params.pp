@@ -11,8 +11,8 @@ class tdd_puppet_module::params {
       $config_file_name = '/etc/tdd_puppet_module.cfg'
     }
     'RedHat': {
-      $package_name = 'lighttpd'
-      $service_name = 'lighttpd'
+      $package_name = 'nginx'
+      $service_name = 'nginx'
       $config_file_name = '/etc/tdd_puppet_module.conf'
     }
     default: {
