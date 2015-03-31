@@ -9,7 +9,7 @@ class tdd_puppet_module::repos {
       include apt
     }
     'RedHat': {
-      yumrepo { "nginx":
+      yumrepo { 'nginx':
         baseurl  => 'http://nginx.org/packages/centos/$releasever/$basearch/',
         enabled  => 1,
         gpgcheck => 0,
