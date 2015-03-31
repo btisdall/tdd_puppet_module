@@ -14,6 +14,7 @@ class tdd_puppet_module (
 
   # validate parameters here
 
+  class { '::tdd_puppet_module::repos': } ->
   class { '::tdd_puppet_module::install': } ->
   class { '::tdd_puppet_module::config': } ~>
   class { '::tdd_puppet_module::service': } ->

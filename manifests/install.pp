@@ -4,7 +4,6 @@
 #
 class tdd_puppet_module::install {
 
-  include apt
   package { $::tdd_puppet_module::package_name:
     ensure => present,
   }

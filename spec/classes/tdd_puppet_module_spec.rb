@@ -13,8 +13,8 @@ describe 'tdd_puppet_module' do
 
           it { is_expected.to compile.with_all_deps }
 
-          it { is_expected.to contain_class('apt') }
           it { is_expected.to contain_class('tdd_puppet_module::params') }
+          it { is_expected.to contain_class('tdd_puppet_module::repos').that_comes_before('tdd_puppet_module::install') }
           it { is_expected.to contain_class('tdd_puppet_module::install').that_comes_before('tdd_puppet_module::config') }
           it { is_expected.to contain_class('tdd_puppet_module::config') }
           it { is_expected.to contain_class('tdd_puppet_module::service').that_subscribes_to('tdd_puppet_module::config') }
