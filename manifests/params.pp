@@ -13,7 +13,7 @@ class tdd_puppet_module::params {
     'RedHat': {
       $package_name = 'nginx'
       $service_name = 'nginx'
-      $config_file_name = '/etc/tdd_puppet_module.conf'
+      $config_file_name = "/etc/tdd_puppet_module.conf"
     }
     default: {
       fail("${::operatingsystem} not supported")
