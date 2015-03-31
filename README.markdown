@@ -1,6 +1,8 @@
 #tdd_puppet_module
 [![Build Status](https://travis-ci.org/btisdall/tdd_puppet_module.svg)](https://travis-ci.org/btisdall/tdd_puppet_module)
 
+A Simple Puppet module to demonstrate some TDD concepts. Created using Gareth Rushmore's excellent [puppet-module-skeleton](https://github.com/garethr/puppet-module-skeleton) which does most of the work!
+
 #### Table of Contents
 
 1. [Overview](#overview)
